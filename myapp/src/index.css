@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page-title {
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Replace 'Your Chosen Font' with the actual font you want to use */
+    text-align: center;
+  }
+  
