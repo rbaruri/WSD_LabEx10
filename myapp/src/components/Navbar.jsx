@@ -1,5 +1,5 @@
 import React from "react";
-
+import Search from "./Search";
 function Navbar() {
   return (
     <nav>
@@ -24,6 +24,7 @@ function Navbar() {
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-xl">UrbanNook</a>
         </div>
+        <Search />
         <div className="flex-none">
           <button className="btn btn-square btn-ghost">
             <svg
@@ -42,6 +43,7 @@ function Navbar() {
           </button>
         </div>
       </div>
+      
     </nav>
   );
 }

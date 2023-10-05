@@ -1,6 +1,7 @@
 import React from "react";
-
+import {useNavigate} from 'react-router-dom'
 function Hero() {
+  const navigate=useNavigate();
   return (
     <div className="hero">
       <div
@@ -19,7 +20,7 @@ function Hero() {
               platform. Start your journey towards homeownership with just a few
               clicks!
             </p>
-            <button className="btn btn-primary">Get Started</button>
+            <button className="btn btn-primary" onClick={()=>navigate("/myapp/src/components/HouseList.jsx")}>Get Started</button>
           </div>
         </div>
       </div>

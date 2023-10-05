@@ -1,27 +1,18 @@
 import React, { useState } from 'react';
-
+import { Routes,Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import HouseList from './components/HouseList';
-import HouseModal from './components/HouseModal';
+import Search from './components/Search';
 
 function App() {
-  const [houses, setHouses] = useState([]);
-
-  const [selectedHouse, setSelectedHouse] = useState(null);
-
-  const handleHouseClick = (house) => {
-    setSelectedHouse(house);
-  };
-
-  return (
+   return (
     <div className="app">
       <Navbar />
       <Hero />
-      <HouseList houses={houses} onHouseClick={handleHouseClick} />
-      {selectedHouse && (
-        <HouseModal property={selectedHouse} onClose={() => setSelectedHouse(null)} />
-      )}
+      <Routes>
+        <Route path="/myapp/src/components/HouseList.jsx" element={<HouseList/>}/>
+      </Routes>
     </div>
   );
 }

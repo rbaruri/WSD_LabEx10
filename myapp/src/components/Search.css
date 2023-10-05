@@ -1,0 +1,20 @@
+.search-result {
+    position: absolute;
+    background-color: #e4e4e4;
+    width: 150px;
+    right: -80px;
+    z-index: 1; 
+  }
+  
+  .search-result div {
+    width: 100%;
+    padding: 10px;
+
+    /* Fill the entire background with cyan */
+  }
+  .search-result-container {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
